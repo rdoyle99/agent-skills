@@ -54,7 +54,7 @@ Want the full collection? **23+ interconnected marketing, sales, and growth skil
 - Marketing psychology
 - And more...
 
-👉 **[Get the Premium Bundle on Gumroad](https://buy.stripe.com/7sYcN5f53b81evv6VN2400u)** — $39
+👉 **[Get the Premium Bundle on Gumroad](https://buy.stripe.com/6oU5kD4qp8ZT4UV0xp2400v)** — $39
 
 Each skill is battle-tested on real campaigns that have generated millions in revenue.
 
