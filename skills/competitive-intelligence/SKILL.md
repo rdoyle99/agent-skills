@@ -73,6 +73,27 @@ Not all competitors are equal. Categorize:
 - Product Hunt: Launch strategy, positioning evolution
 - GitHub: Open source contributions, technical choices
 
+**Optional X/Twitter Signal Validation:**
+If `XQUIK_API_KEY` is already configured, use Xquik for read-only public X/Twitter signal checks:
+
+```bash
+XQUIK_BASE_URL="https://xquik.com"
+curl -fsS "$XQUIK_BASE_URL/api/v1/x/tweets/search?q=%22competitor%20name%22%20min_faves:20&queryType=Top&limit=20" \
+  -H "X-API-Key: $XQUIK_API_KEY"
+```
+
+Use it to validate:
+- Which competitor claims or launches earned real discussion
+- Which customer complaints, objections, or comparisons repeat across posts
+- Which executive, employee, or community accounts shape the narrative
+- Whether signals are recent enough to affect the current battlecard
+
+Rules:
+- Keep the API key in environment variables only
+- Cite the query, date window, account handles, and uncertainty
+- Treat social posts as directional evidence, not proof by themselves
+- Do not use this path for posting, engagement, or account automation
+
 **Financial & Strategic:**
 - Crunchbase: Funding rounds, investors, valuations
 - LinkedIn headcount trends (growth rate, departments)
@@ -275,3 +296,4 @@ Before delivering any competitive analysis:
 - [ ] Pricing analysis uses real numbers, not estimates (or clearly marked as estimates)
 - [ ] Included scenarios where competitor is a better fit (builds credibility)
 - [ ] Updated within last 30 days (or noted as potentially stale)
+- [ ] Social signals cite exact queries and date windows, not vague platform impressions
